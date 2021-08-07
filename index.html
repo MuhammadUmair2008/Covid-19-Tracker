@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <title>COVID-19 REAL TIME APP</title>
+    <style>
+        body {
+            background-image: url("http://static1.squarespace.com/static/5e6613a1dc75b87df82b78e1/t/5e6b98beede584624b3f3c97/1584109761526/SoMe-image.jpg?format=1500w");
+    background-repeat: no-repeat;
+    background-size: cover;
+        }
+        h1 {
+            background-color: black;
+            color: #fff;
+            border: 5px solid blue;
+            text-align: center;
+        }
+        tr {
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <br><br>
+    <div class="container">
+        <h1 class="text-center mt-5">COVID-19 LIVE DATA IN TABLE</h1>
+        <br><br><br><br><br><br>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>New Cases</th>
+                    <th>Total Cases</th>
+                    <th>New Deaths</th>
+                    <th>Total Deaths</th>
+                    <th>New Recovered</th>
+                    <th>Total Recovered</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="data">
+                
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <center>
+        <button onclick="refreshData()" class="btn btn-danger btn-block">
+            Refresh Data
+        </button></center>
+    </div>
+    <script src="/index.js"></script>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</html>
